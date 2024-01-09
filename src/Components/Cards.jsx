@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cards({ name, email, username, city, phone, website }) {
+function Cards({ name, email, user, city, Number, website }) {
   return (
     <>
       <div className="col-lg-4 mb-5">
@@ -13,7 +13,7 @@ function Cards({ name, email, username, city, phone, website }) {
               <h5 className="card-title mb-3">{name}</h5>
             </a>
             <a className="text-decoration-none link-dark stretched-link">
-              <h6 className="card-title mb-3">{username}</h6>
+              <h6 className="card-title mb-3">{user}</h6>
             </a>
             <p className="card-text mb-0">
               <strong>Email: </strong>
@@ -26,7 +26,7 @@ function Cards({ name, email, username, city, phone, website }) {
               <div className="d-flex align-items-center">
                 <div className="small">
                   <div className="fw-bold">{website}</div>
-                  <div className="text-muted">{phone}</div>
+                  <div className="text-muted">{number}</div>
                 </div>
               </div>
             </div>

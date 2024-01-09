@@ -46,7 +46,7 @@ function Home() {
           <div className="row gx-5">
           {
             blog.map((e) => {
-                return( <Cards name={e.name} user={e.user} email={e.email} city={e.city} number={e.number}website={e.website} />)
+                return( <Cards name={e.name} user={e.user} email={e.email} city={e.city} number={e.number} website={e.website} />)
             } )
           }
           </div>
