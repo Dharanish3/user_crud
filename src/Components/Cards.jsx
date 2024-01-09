@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cards({ name, email, user, city, Number, website }) {
+function Cards({ name, email, user, city, number, website }) {
   return (
     <>
       <div className="col-lg-4 mb-5">
