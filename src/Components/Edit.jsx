@@ -33,7 +33,7 @@ function Edit() {
  const getData = async ()  => {
     try {
         
-        let res = await axios.put(`${API_URL}/${id}`) 
+        let res = await axios.get(`${API_URL}/${id}`) 
         if(res.status===200){
             setName(res.data.name)
             setEmail(res.data.email)
