@@ -44,27 +44,27 @@ function Create() {
           <div className="row">
             <Form.Group className="mb-3">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />
+              <Form.Control type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} required />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Username</Form.Label>
-              <Form.Control type="text" placeholder="Username" onChange={(e) => setUser(e.target.value)} />
+              <Form.Control type="text" placeholder="Username" onChange={(e) => setUser(e.target.value)} required />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)}  />
+              <Form.Control type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>City</Form.Label>
-              <Form.Control type="text" placeholder="City" onChange={(e) => setCity(e.target.value)}  />
+              <Form.Control type="text" placeholder="City" onChange={(e) => setCity(e.target.value)} required  />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Website</Form.Label>
-              <Form.Control type="text" placeholder="Website" onChange={(e) => setWebsite(e.target.value)} />
+              <Form.Control type="text" placeholder="Website" onChange={(e) => setWebsite(e.target.value)} required />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Number</Form.Label>
-              <Form.Control type="text" placeholder="Number" onChange={(e) => setNumber(e.target.value)}  />
+              <Form.Control type="text" placeholder="Number" onChange={(e) => setNumber(e.target.value)} required  />
             </Form.Group>
            
           </div>
