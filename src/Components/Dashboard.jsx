@@ -5,10 +5,12 @@ import Button from "react-bootstrap/Button";
 import { API_URL } from '../App';
 import axios from "axios";
 import { toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 
 
 function Dashboard() {
   let [blog, setBlog] = useState([]);
+  let navigate = useNavigate()
 
   const getData = async() => {
     try {
@@ -22,6 +24,8 @@ function Dashboard() {
       toast.error('error')
     }
   }
+
+
 
   const handleDelete = async (id) => {
     try {
@@ -68,7 +72,7 @@ function Dashboard() {
                 <td>{e.phone}</td>
                 <td>{e.website}</td>
                 <td>
-                  <Button variant="primary">Primary</Button>{" "}
+                  <Button variant="primary" onClick={() => navigate(`/edit/${e.id}`)}>Edit</Button>{" "}
                   <Button variant="danger" onClick={() => handleDelete(e.id)}>Delete</Button>{" "}
                 </td>
               </tr>
