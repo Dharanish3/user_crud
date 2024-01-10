@@ -69,7 +69,7 @@ function Dashboard() {
                 <td>{e.user}</td>
                 <td>{e.email}</td>
                 <td>{e.city}</td>
-                <td>{e.phone}</td>
+                <td>{e.number}</td>
                 <td>{e.website}</td>
                 <td>
                   <Button variant="primary" onClick={() => navigate(`/edit/${e.id}`)}>Edit</Button>{" "}
